@@ -28,11 +28,10 @@
   
 
   
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-"# TheRabdal" 
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --> 
 
 
-<h1 align="center">👋 Ngoding Dulu, Jagonya Belakangan!</h1>
+<h1 align="center">👋 NGODING AJA DULU, JAGONYA BELAKANGAN!</h1>
 
 <p align="center">
     <a href="https://www.youtube.com/@kautsarrabdal">
@@ -41,7 +40,7 @@
 </p>
 
 <p align="center">
-  <img src=https://github-profile-trophy.vercel.app/?username=deaafrizal&theme=radical&margin-w=10&rank=A,AA,AAA,S,SS,SSS,?&row=2&column=3" alt="Trophies" />
+  <img src=https://github-profile-trophy.vercel.app/?username=kautsarrabdal&theme=radical&margin-w=10&rank=A,AA,AAA,S,SS,SSS,?&row=2&column=3" alt="Trophies" />
 </p>
 
 <p align="center">
