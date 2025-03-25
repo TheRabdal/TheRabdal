@@ -29,7 +29,7 @@
 
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --> 
-
+by TheRabdal, Just for fun :)
 
 
 <h1 align="center">👋 NGODING AJA DULU, JAGONYA BELAKANGAN!</h1>
