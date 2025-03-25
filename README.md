@@ -35,7 +35,8 @@ by TheRabdal, Just for fun :)
 <h1 align="center">👋 NGODING AJA DULU, JAGONYA BELAKANGAN!</h1>
 
 <p align="center">
-    <a href="https://www.youtube.com/@kautsarrabdal">height="120" /></a>
+    <a href="https://www.youtube.com/@kautsarrabdal">height="120" />
+    <img src="https://images.app.goo.gl/tLmmgc2NEzsaB7xF9" alt="ESP32" /></a>
 </p>
 
 
