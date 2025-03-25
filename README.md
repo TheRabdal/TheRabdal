@@ -30,3 +30,29 @@
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 "# TheRabdal" 
+
+
+# Hi, I'm [Your Name] 👋
+
+## Back End Developer | Distro Hopper 🐧
+
+![Banner](https://your-image-link.com)  <!-- Ganti dengan URL gambar banner kamu -->
+
+**About Me:**
+- 🔭 I’m currently working at **Your Company**
+- 🌱 I’m learning **React, Node.js, and Kubernetes**
+- ⚡ Fun fact: **I love Open Source!**
+
+**Tech Stack:**
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+
+**Most Used Languages:**
+![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact)
+
+**Contributions:**
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=your-username)
+
+☕ **You can help me by Donating**  
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-donate-orange)](https://www.buymeacoffee.com/your-username)
