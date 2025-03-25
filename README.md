@@ -28,7 +28,7 @@
 ![](https://github-profile-trophy.vercel.app/?username=TheRabdal&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=TheRabdal&icon=0&color=0)](https://visitcount.itsvg.in)
+
 
 <h1 align="center">👋 NGODING AJA DULU, JAGONYA BELAKANGAN!</h1>
 
