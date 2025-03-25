@@ -35,8 +35,8 @@
 <h1 align="center">👋 Ngoding Dulu, Jagonya Belakangan!</h1>
 
 <p align="center">
-    <a href="https://youtube.com/@deaafrizal">
-      <img src="https://render.gitanimals.org/lines/deaafrizal?pet-id=657051833278790750" width="600" height="120" />
+    <a href="https://www.youtube.com/@kautsarrabdal">
+      <img src="https://render.gitanimals.org/lines/TheRabdal?pet-id=657051833278790750" width="600" height="120" />
     </a>
 </p>
 
