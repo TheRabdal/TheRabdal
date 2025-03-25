@@ -31,17 +31,14 @@
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) --> 
 
 
+
 <h1 align="center">👋 NGODING AJA DULU, JAGONYA BELAKANGAN!</h1>
 
 <p align="center">
-    <a href="https://www.youtube.com/@kautsarrabdal">
-      <img src="https://render.gitanimals.org/lines/TheRabdal?pet-id=657051833278790750" width="600" height="120" />
+    <a href="https://www.youtube.com/@kautsarrabdal">height="120" />
     </a>
 </p>
 
-<p align="center">
-  <img src=https://github-profile-trophy.vercel.app/?username=kautsarrabdal&theme=radical&margin-w=10&rank=A,AA,AAA,S,SS,SSS,?&row=2&column=3" alt="Trophies" />
-</p>
 
 <p align="center">
   <b>Engineer 🚀 | Content Creator 🎥 | Tech Enthusiast 💡</b>
