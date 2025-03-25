@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Muhammad Kautsar Rizqi Abdal</h1>
-<h3 align="center">Mobile Developer | Distro Hopper 🐧</h3>
+<h3 align="center">Full Stuck Copy Paste Developer | Distro Hopper 🐧</h3>
 
 
 
