@@ -65,11 +65,13 @@
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=TheRabdal&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub statistics">
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheRabdal&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="Most used languages">
   <br>
-  <img src="https://nirzak-streak-stats.vercel.app/?user=TheRabdal&theme=tokyonight&hide_border=true" alt="GitHub contribution streak">
+  <img src="https://streak-stats.demolab.com?user=TheRabdal&theme=tokyonight&hide_border=true" alt="GitHub contribution streak">
 </div>
 
+## Profile overview
+
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=TheRabdal&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8" alt="GitHub trophies">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TheRabdal&theme=tokyonight" alt="GitHub profile overview">
 </div>
 
 <div align="center">
@@ -79,8 +81,8 @@
 ## Find me
 
 <a href="https://discord.gg/VTe7G28"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
-<a href="https://youtube.com/@kautsarrabdal"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"></a>
-<a href="https://bagibagi.co/therabdal"><img src="https://img.shields.io/badge/Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Support me"></a>
+<a href="https://www.youtube.com/@therabdal"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="YouTube"></a>
+<a href="https://tiptap.gg/therabdal"><img src="https://img.shields.io/badge/Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Support me"></a>
 
 <div align="right">
   <sub>END OF TRANSMISSION · TheRabdal</sub>
