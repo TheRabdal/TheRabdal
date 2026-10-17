@@ -2,13 +2,6 @@
   <img src="./profile-console.svg" alt="A custom terminal-style profile banner for Muhammad Kautsar Rizqi Abdal">
 </div>
 
-<div align="center">
-  <a href="#field-notes">FIELD NOTES</a> &nbsp;·&nbsp;
-  <a href="#toolkit">TOOLKIT</a> &nbsp;·&nbsp;
-  <a href="#activity">ACTIVITY</a> &nbsp;·&nbsp;
-  <a href="#find-me">FIND ME</a>
-</div>
-
 <br>
 
 > **“Ngoding aja dulu, jagonya mah belakangan!”**
