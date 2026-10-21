@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="470" viewBox="0 0 920 470" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">TheRabdal skill matrix</title>
+  <desc id="dsc">Animated capability bars for languages and frameworks used by Muhammad Kautsar Rizqi Abdal.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#100d26"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="xp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24"/><stop offset=".5" stop-color="#f472b6"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0v30" fill="none" stroke="#1e293b" stroke-width=".6" stroke-opacity=".5"/>
+    </pattern>
+    <filter id="gl" x="-40%" y="-60%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="920" height="470" rx="16" fill="url(#panel)"/>
+  <rect width="920" height="470" rx="16" fill="url(#grid)" opacity=".6"/>
+  <rect x="6" y="6" width="908" height="458" rx="12" fill="none" stroke="#1e293b"/>
+
+  <!-- header -->
+  <g transform="translate(30 30)" font-family="'Courier New', monospace">
+    <text x="0" y="0" font-size="11" letter-spacing="3" fill="#22d3ee">CAPABILITY_MATRIX</text>
+    <text x="0" y="26" font-size="20" font-weight="bold" letter-spacing=".5" fill="#f1f5f9">STACK TELEMETRY</text>
+    <text x="0" y="46" font-size="10.5" fill="#475569" letter-spacing="1.6">LIVE LOAD PROFILE · AUTO-SYNCED FROM BUILD PIPELINE</text>
+  </g>
+  <g transform="translate(760 34)" font-family="'Courier New', monospace" font-size="10" letter-spacing="1.2">
+    <rect width="130" height="46" rx="6" fill="#0a0f1e" stroke="#22d3ee"/>
+    <text x="12" y="18" fill="#64748b">SKILL_AVG</text>
+    <text x="12" y="36" font-size="16" font-weight="bold" fill="#22d3ee">83.0</text>
+    <circle cx="112" cy="14" r="5" fill="#34d399"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <text x="104" y="38" fill="#34d399" font-size="9">LIVE</text>
+  </g>
+  <line x1="30" y1="92" x2="890" y2="92" stroke="#1e293b" stroke-dasharray="4 4"/>
+
+  <!-- bars -->
+  <g font-family="'Courier New', monospace">
+    <!-- row helper: label, pct, barWidth, gradient, begin -->
+    <g transform="translate(0 0)">
+      <text x="30" y="128" font-size="12.5" font-weight="bold" fill="#e2e8f0">DART</text>
+      <rect x="170" y="116" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="116" width="0" height="15" rx="7.5" fill="url(#g1)" filter="url(#gl)"><animate attributeName="width" from="0" to="478" dur="1.2s" begin="0.2s" fill="freeze"/></rect>
+      <text x="860" y="128" text-anchor="end" font-size="12" fill="#22d3ee">92</text>
+    </g>
+    <g>
+      <text x="30" y="168" font-size="12.5" font-weight="bold" fill="#e2e8f0">FLUTTER</text>
+      <rect x="170" y="156" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="156" width="0" height="15" rx="7.5" fill="url(#g2)" filter="url(#gl)"><animate attributeName="width" from="0" to="494" dur="1.2s" begin="0.35s" fill="freeze"/></rect>
+      <text x="860" y="168" text-anchor="end" font-size="12" fill="#f472b6">95</text>
+    </g>
+    <g>
+      <text x="30" y="208" font-size="12.5" font-weight="bold" fill="#e2e8f0">JAVASCRIPT</text>
+      <rect x="170" y="196" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="196" width="0" height="15" rx="7.5" fill="url(#g3)" filter="url(#gl)"><animate attributeName="width" from="0" to="458" dur="1.2s" begin="0.5s" fill="freeze"/></rect>
+      <text x="860" y="208" text-anchor="end" font-size="12" fill="#34d399">88</text>
+    </g>
+    <g>
+      <text x="30" y="248" font-size="12.5" font-weight="bold" fill="#e2e8f0">C++</text>
+      <rect x="170" y="236" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="236" width="0" height="15" rx="7.5" fill="url(#g1)" filter="url(#gl)"><animate attributeName="width" from="0" to="426" dur="1.2s" begin="0.65s" fill="freeze"/></rect>
+      <text x="860" y="248" text-anchor="end" font-size="12" fill="#22d3ee">82</text>
+    </g>
+    <g>
+      <text x="30" y="288" font-size="12.5" font-weight="bold" fill="#e2e8f0">PYTHON</text>
+      <rect x="170" y="276" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="276" width="0" height="15" rx="7.5" fill="url(#g2)" filter="url(#gl)"><animate attributeName="width" from="0" to="406" dur="1.2s" begin="0.8s" fill="freeze"/></rect>
+      <text x="860" y="288" text-anchor="end" font-size="12" fill="#f472b6">78</text>
+    </g>
+    <g>
+      <text x="30" y="328" font-size="12.5" font-weight="bold" fill="#e2e8f0">LINUX / DEVOPS</text>
+      <rect x="170" y="316" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="316" width="0" height="15" rx="7.5" fill="url(#g3)" filter="url(#gl)"><animate attributeName="width" from="0" to="442" dur="1.2s" begin="0.95s" fill="freeze"/></rect>
+      <text x="860" y="328" text-anchor="end" font-size="12" fill="#34d399">85</text>
+    </g>
+    <g>
+      <text x="30" y="368" font-size="12.5" font-weight="bold" fill="#e2e8f0">JAVA</text>
+      <rect x="170" y="356" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="356" width="0" height="15" rx="7.5" fill="url(#g1)" filter="url(#gl)"><animate attributeName="width" from="0" to="385" dur="1.2s" begin="1.1s" fill="freeze"/></rect>
+      <text x="860" y="368" text-anchor="end" font-size="12" fill="#22d3ee">74</text>
+    </g>
+    <g>
+      <text x="30" y="408" font-size="12.5" font-weight="bold" fill="#e2e8f0">PHP / WORDPRESS</text>
+      <rect x="170" y="396" width="520" height="15" rx="7.5" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="170" y="396" width="0" height="15" rx="7.5" fill="url(#g2)" filter="url(#gl)"><animate attributeName="width" from="0" to="364" dur="1.2s" begin="1.25s" fill="freeze"/></rect>
+      <text x="860" y="408" text-anchor="end" font-size="12" fill="#f472b6">70</text>
+    </g>
+
+    <!-- XP bar -->
+    <g transform="translate(30 428)">
+      <text x="0" y="14" font-size="10.5" letter-spacing="1.6" fill="#64748b">EXPERIENCE_PROGRESS</text>
+      <rect x="190" y="4" width="500" height="14" rx="7" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect x="190" y="4" width="0" height="14" rx="7" fill="url(#xp)" filter="url(#gl)"><animate attributeName="width" from="0" to="410" dur="1.6s" begin="1.4s" fill="freeze"/></rect>
+      <text x="860" y="14" text-anchor="end" font-size="10.5" fill="#fbbf24">LVL 07</text>
+    </g>
+  </g>
+</svg>

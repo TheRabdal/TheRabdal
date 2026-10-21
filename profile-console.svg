@@ -1,214 +1,201 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
-  <title id="title">TheRabdal — Cyberdeck OS v4.0.2</title>
-  <desc id="desc">An advanced cyberpunk terminal and holographic command center for Muhammad Kautsar Rizqi Abdal.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">TheRabdal — NEXUS core online</title>
+  <desc id="dsc">An animated cyberpunk command deck: falling data streams, glitching holographic name, rotating reactor rings and a live terminal feed.</desc>
+
   <defs>
-    <!-- Gradients -->
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#050814"/>
-      <stop offset="0.5" stop-color="#0b1021"/>
-      <stop offset="1" stop-color="#030712"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#04060f"/>
+      <stop offset=".45" stop-color="#0a1022"/>
+      <stop offset="1" stop-color="#02040a"/>
     </linearGradient>
-    <linearGradient id="neon-cyan" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00f2fe"/>
-      <stop offset="1" stop-color="#4facfe"/>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
     </linearGradient>
-    <linearGradient id="neon-pink" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff0844"/>
-      <stop offset="1" stop-color="#ffb199"/>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="neon-purple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#b19fff"/>
-      <stop offset="1" stop-color="#7928ca"/>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1428" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#131033" stop-opacity=".88"/>
     </linearGradient>
-    <linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#1e1b4b" stop-opacity="0.75"/>
-    </linearGradient>
-    <linearGradient id="scanner" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#00f2fe" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#00f2fe" stop-opacity="0.15"/>
-      <stop offset="1" stop-color="#00f2fe" stop-opacity="0"/>
+    <linearGradient id="reactor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
     </linearGradient>
 
-    <!-- Filters -->
-    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="glow-pink" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="glass-blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10"/>
-    </filter>
+    <pattern id="gridP" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#1e293b" stroke-width=".8" stroke-opacity=".45"/>
+    </pattern>
+    <pattern id="scanP" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="1.2" fill="#000" opacity=".35"/>
+    </pattern>
 
-    <!-- Patterns -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4"/>
-    </pattern>
-    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#334155" opacity="0.5"/>
-    </pattern>
-    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="100" y2="0" stroke="#000" stroke-width="1.2" opacity="0.3"/>
-    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSoft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="480" rx="20" fill="url(#bg)"/>
-  <rect width="1200" height="480" rx="20" fill="url(#grid)"/>
-  
-  <!-- Cyberpunk Glowing Orbs / Nebula -->
-  <circle cx="1050" cy="100" r="180" fill="#7928ca" opacity="0.25" filter="url(#glow-pink)"/>
-  <circle cx="150" cy="380" r="150" fill="#00f2fe" opacity="0.15" filter="url(#glow-cyan)"/>
-  <circle cx="600" cy="240" r="220" fill="#4338ca" opacity="0.12" filter="url(#glow-cyan)"/>
+  <rect width="1200" height="500" rx="22" fill="url(#bgGrad)"/>
+  <rect width="1200" height="500" rx="22" fill="url(#gridP)"/>
 
-  <!-- Holographic Grid Floor / Perspective Lines -->
-  <g opacity="0.25">
-    <line x1="0" y1="480" x2="450" y2="300" stroke="#00f2fe" stroke-width="1"/>
-    <line x1="1200" y1="480" x2="750" y2="300" stroke="#00f2fe" stroke-width="1"/>
-    <line x1="200" y1="480" x2="520" y2="300" stroke="#7928ca" stroke-width="1"/>
-    <line x1="1000" y1="480" x2="680" y2="300" stroke="#7928ca" stroke-width="1"/>
-    <path d="M 0 380 Q 600 340 1200 380" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <!-- ambient nebula -->
+  <circle cx="1010" cy="120" r="190" fill="#7c3aed" opacity=".28" filter="url(#glowSoft)"/>
+  <circle cx="130" cy="410" r="170" fill="#0891b2" opacity=".22" filter="url(#glowSoft)"/>
+  <circle cx="620" cy="250" r="230" fill="#312e81" opacity=".2" filter="url(#glowSoft)"/>
+
+  <!-- falling data streams -->
+  <g font-family="'Courier New', monospace" font-size="13" fill="#22d3ee" opacity=".22">
+    <g><text x="40" y="0"><tspan x="40" dy="0">1</tspan><tspan x="40" dy="16">0</tspan><tspan x="40" dy="16">1</tspan><tspan x="40" dy="16">1</tspan><tspan x="40" dy="16">0</tspan><tspan x="40" dy="16">1</tspan><tspan x="40" dy="16">0</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -180" to="0 520" dur="11s" repeatCount="indefinite"/></g>
+    <g><text x="150" y="0" fill="#a78bfa"><tspan x="150" dy="0">0</tspan><tspan x="150" dy="16">1</tspan><tspan x="150" dy="16">1</tspan><tspan x="150" dy="16">0</tspan><tspan x="150" dy="16">0</tspan><tspan x="150" dy="16">1</tspan><tspan x="150" dy="16">1</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -260" to="0 520" dur="14s" repeatCount="indefinite"/></g>
+    <g><text x="265" y="0"><tspan x="265" dy="0">1</tspan><tspan x="265" dy="16">1</tspan><tspan x="265" dy="16">0</tspan><tspan x="265" dy="16">1</tspan><tspan x="265" dy="16">0</tspan><tspan x="265" dy="16">0</tspan><tspan x="265" dy="16">1</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -120" to="0 520" dur="9s" repeatCount="indefinite"/></g>
+    <g><text x="470" y="0" fill="#f472b6"><tspan x="470" dy="0">0</tspan><tspan x="470" dy="16">0</tspan><tspan x="470" dy="16">1</tspan><tspan x="470" dy="16">1</tspan><tspan x="470" dy="16">1</tspan><tspan x="470" dy="16">0</tspan><tspan x="470" dy="16">1</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -300" to="0 520" dur="16s" repeatCount="indefinite"/></g>
+    <g><text x="590" y="0"><tspan x="590" dy="0">1</tspan><tspan x="590" dy="16">0</tspan><tspan x="590" dy="16">0</tspan><tspan x="590" dy="16">1</tspan><tspan x="590" dy="16">1</tspan><tspan x="590" dy="16">0</tspan><tspan x="590" dy="16">0</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -200" to="0 520" dur="12.5s" repeatCount="indefinite"/></g>
+    <g><text x="730" y="0" fill="#34d399"><tspan x="730" dy="0">0</tspan><tspan x="730" dy="16">1</tspan><tspan x="730" dy="16">0</tspan><tspan x="730" dy="16">0</tspan><tspan x="730" dy="16">1</tspan><tspan x="730" dy="16">1</tspan><tspan x="730" dy="16">0</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -240" to="0 520" dur="15s" repeatCount="indefinite"/></g>
+    <g><text x="880" y="0"><tspan x="880" dy="0">1</tspan><tspan x="880" dy="16">1</tspan><tspan x="880" dy="16">0</tspan><tspan x="880" dy="16">1</tspan><tspan x="880" dy="16">0</tspan><tspan x="880" dy="16">1</tspan><tspan x="880" dy="16">1</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -160" to="0 520" dur="10.5s" repeatCount="indefinite"/></g>
+    <g><text x="1090" y="0" fill="#818cf8"><tspan x="1090" dy="0">0</tspan><tspan x="1090" dy="16">0</tspan><tspan x="1090" dy="16">1</tspan><tspan x="1090" dy="16">0</tspan><tspan x="1090" dy="16">1</tspan><tspan x="1090" dy="16">0</tspan><tspan x="1090" dy="16">1</tspan></text>
+      <animateTransform attributeName="transform" type="translate" from="0 -280" to="0 520" dur="13.5s" repeatCount="indefinite"/></g>
   </g>
 
-  <!-- HUD Frame & Border -->
-  <rect x="12" y="12" width="1176" height="456" rx="14" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.8"/>
-  <!-- Corner Tech Brackets -->
-  <path d="M 12 52 L 12 26 A 14 14 0 0 1 26 12 L 52 12" fill="none" stroke="#00f2fe" stroke-width="3" filter="url(#glow-cyan)"/>
-  <path d="M 1188 52 L 1188 26 A 14 14 0 0 0 1174 12 L 1148 12" fill="none" stroke="#00f2fe" stroke-width="3" filter="url(#glow-cyan)"/>
-  <path d="M 12 428 L 12 454 A 14 14 0 0 0 26 468 L 52 468" fill="none" stroke="#00f2fe" stroke-width="3" filter="url(#glow-cyan)"/>
-  <path d="M 1188 428 L 1188 454 A 14 14 0 0 1 1174 468 L 1148 468" fill="none" stroke="#00f2fe" stroke-width="3" filter="url(#glow-cyan)"/>
+  <!-- perspective floor -->
+  <g opacity=".3">
+    <line x1="-100" y1="500" x2="470" y2="330" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="1300" y1="500" x2="730" y2="330" stroke="#22d3ee" stroke-width="1"/>
+    <line x1="200" y1="500" x2="520" y2="330" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="1000" y1="500" x2="680" y2="330" stroke="#a78bfa" stroke-width="1"/>
+    <path d="M0 420q600-70 1200 0" fill="none" stroke="#22d3ee" stroke-width="1.4" stroke-dasharray="9 7"/>
+  </g>
 
-  <!-- Top Bar / Header Status -->
-  <g transform="translate(35, 38)">
-    <!-- Window Controls -->
+  <!-- HUD frame -->
+  <rect x="10" y="10" width="1180" height="480" rx="14" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <path d="M10 54V24a14 14 0 0 1 14-14h30" fill="none" stroke="#22d3ee" stroke-width="3" filter="url(#glow)"/>
+  <path d="M1190 54V24a14 14 0 0 0-14-14h-30" fill="none" stroke="#22d3ee" stroke-width="3" filter="url(#glow)"/>
+  <path d="M10 446v30a14 14 0 0 0 14 14h30" fill="none" stroke="#f472b6" stroke-width="3" filter="url(#glow)"/>
+  <path d="M1190 446v30a14 14 0 0 1-14 14h-30" fill="none" stroke="#f472b6" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- status header -->
+  <g transform="translate(36 40)" font-family="'Courier New', monospace">
     <circle cx="0" cy="0" r="6" fill="#ff5f56"/>
     <circle cx="20" cy="0" r="6" fill="#ffbd2e"/>
     <circle cx="40" cy="0" r="6" fill="#27c93f"/>
-
-    <text x="70" y="4" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#94a3b8" letter-spacing="2">SYS_ID: THERABDAL_CORE // SECURE_SOCKET</text>
-    
-    <!-- Live Ping / Status Badge -->
-    <rect x="980" y="-10" width="135" height="22" rx="4" fill="#0f172a" stroke="#00f2fe" stroke-width="1"/>
-    <circle cx="994" cy="1" r="4" fill="#00f2fe">
-      <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+    <text x="68" y="4" font-size="11.5" letter-spacing="2.4" fill="#64748b">NEXUS_DECK :: USER_SPACE // SESSION_0x4A2F</text>
+    <rect x="948" y="-11" width="206" height="22" rx="4" fill="#0b1120" stroke="#22d3ee" stroke-width="1"/>
+    <circle cx="963" cy="0" r="4" fill="#22d3ee">
+      <animate attributeName="opacity" values="1;.15;1" dur="1.4s" repeatCount="indefinite"/>
     </circle>
-    <text x="1008" y="5" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#00f2fe" letter-spacing="1">ONLINE [99.9%]</text>
+    <text x="978" y="4" font-size="10" font-weight="bold" letter-spacing="1.4" fill="#22d3ee">CORE_STABLE · UPTIME 99.99%</text>
   </g>
+  <line x1="36" y1="66" x2="1164" y2="66" stroke="#1e293b" stroke-dasharray="5 5"/>
 
-  <!-- Divider Line -->
-  <line x1="35" y1="65" x2="1165" y2="65" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
-
-  <!-- Left Column: Main Identity & Bio -->
-  <g transform="translate(60, 105)">
-    <!-- Terminal Tag -->
+  <!-- LEFT: identity -->
+  <g transform="translate(58 106)">
     <g>
-      <rect x="0" y="0" width="130" height="24" rx="4" fill="#1e1b4b" stroke="#7928ca" stroke-width="1"/>
-      <text x="12" y="16" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#c084fc" letter-spacing="1.5">&gt; ROOT_USER</text>
+      <rect width="128" height="23" rx="4" fill="#151033" stroke="#a78bfa"/>
+      <text x="12" y="16" font-family="'Courier New', monospace" font-size="10.5" font-weight="bold" letter-spacing="1.6" fill="#c4b5fd">&gt; IDENTITY_LOADED</text>
     </g>
 
-    <!-- Name & Title -->
-    <text x="0" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#f8fafc" letter-spacing="-0.5">
-      Muhammad Kautsar
-    </text>
-    <text x="0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#neon-cyan)" letter-spacing="-0.5" filter="url(#glow-cyan)">
-      Rizqi Abdal
-    </text>
-
-    <!-- Glowing Accent Bar -->
-    <rect x="0" y="145" width="220" height="3" rx="1.5" fill="url(#neon-cyan)" filter="url(#glow-cyan)"/>
-
-    <!-- Roles / Skills badges -->
-    <g transform="translate(0, 175)">
-      <!-- Role 1 -->
-      <rect x="0" y="0" width="185" height="30" rx="6" fill="#1e293b" stroke="#00f2fe" stroke-width="1"/>
-      <text x="14" y="20" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#38bdf8">⚡ FULL-STACK DEV</text>
-
-      <!-- Role 2 -->
-      <rect x="195" y="0" width="165" height="30" rx="6" fill="#1e293b" stroke="#7928ca" stroke-width="1"/>
-      <text x="210" y="20" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#c084fc">🔮 DISTRO HOPPER</text>
-
-      <!-- Role 3 -->
-      <rect x="370" y="0" width="165" height="30" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="1"/>
-      <text x="385" y="20" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#f472b6">🌌 WORLD BUILDER</text>
+    <!-- glitch stack -->
+    <g font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" letter-spacing="-.5">
+      <text x="0" y="72" fill="#f472b6" opacity=".55">
+        Muhammad Kautsar
+        <animateTransform attributeName="transform" type="translate" values="0 0; -3 1; 2 -1; 0 0" dur="4.2s" repeatCount="indefinite"/>
+      </text>
+      <text x="0" y="72" fill="#22d3ee" opacity=".55">
+        Muhammad Kautsar
+        <animateTransform attributeName="transform" type="translate" values="0 0; 3 -1; -2 1; 0 0" dur="3.6s" repeatCount="indefinite"/>
+      </text>
+      <text x="0" y="72" fill="#f1f5f9">Muhammad Kautsar</text>
     </g>
 
-    <!-- Quote / Manifesto -->
-    <g transform="translate(0, 235)">
-      <rect x="0" y="0" width="540" height="52" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-      <path d="M 0 8 L 0 44" stroke="#00f2fe" stroke-width="4" stroke-linecap="round"/>
-      <text x="20" y="22" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#94a3b8">QUOTIENT_MANIFESTO:</text>
-      <text x="20" y="40" font-family="'Courier New', monospace" font-size="13" font-style="italic" fill="#e2e8f0">“Ngoding aja dulu, jagonya mah belakangan!”</text>
-    </g>
-  </g>
-
-  <!-- Right Column: Holographic Cyberdeck Widget / Interactive Code Terminal -->
-  <g transform="translate(640, 95)">
-    <!-- Terminal Window Container -->
-    <rect x="0" y="0" width="500" height="345" rx="12" fill="url(#card-bg)" stroke="#334155" stroke-width="1.5" filter="drop-shadow(0px 10px 20px rgba(0,0,0,0.5))"/>
-    
-    <!-- Terminal Header -->
-    <path d="M 0 35 L 500 35" stroke="#334155" stroke-width="1"/>
-    <circle cx="22" cy="17" r="4.5" fill="#ef4444"/>
-    <circle cx="38" cy="17" r="4.5" fill="#f59e0b"/>
-    <circle cx="54" cy="17" r="4.5" fill="#10b981"/>
-    <text x="250" y="21" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#94a3b8">therabdal@nexus-deck: ~</text>
-
-    <!-- Terminal Content / Live Code Execution -->
-    <g transform="translate(25, 60)" font-family="'Courier New', monospace" font-size="13">
-      <!-- Prompt line 1 -->
-      <text x="0" y="0" fill="#00f2fe">$</text>
-      <text x="20" y="0" fill="#f8fafc">whoami --verbose</text>
-      
-      <!-- Output 1 -->
-      <text x="0" y="25" fill="#64748b">[INFO] Loading profile metadata...</text>
-      <text x="0" y="45" fill="#c084fc">Name    :</text><text x="90" y="45" fill="#38bdf8">Muhammad Kautsar Rizqi Abdal</text>
-      <text x="0" y="65" fill="#c084fc">Status  :</text><text x="90" y="65" fill="#10b981">Building clean, high-performance systems</text>
-      <text x="0" y="85" fill="#c084fc">Stack   :</text><text x="90" y="85" fill="#f472b6">[Dart, C++, TS, Python, Flutter, Linux]</text>
-
-      <!-- Prompt line 2 -->
-      <text x="0" y="125" fill="#00f2fe">$</text>
-      <text x="20" y="125" fill="#f8fafc">git status --ignored</text>
-
-      <!-- Output 2 -->
-      <text x="0" y="150" fill="#64748b">On branch master</text>
-      <text x="0" y="170" fill="#38bdf8">Changes ready for deployment:</text>
-      <text x="20" y="190" fill="#10b981">✓ AI-Readiness architecture optimized</text>
-      <text x="20" y="210" fill="#10b981">✓ Automated workflows active</text>
-      
-      <!-- Blinking cursor prompt -->
-      <text x="0" y="250" fill="#00f2fe">$</text>
-      <rect x="20" y="238" width="10" height="15" fill="#00f2fe">
-        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-      </rect>
+    <g font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" letter-spacing="-.5">
+      <text x="0" y="122" fill="url(#cyanGrad)" filter="url(#glow)">Rizqi Abdal</text>
     </g>
 
-    <!-- Holographic Radar / Tech Accent in corner of card -->
-    <g transform="translate(430, 280)">
-      <circle cx="0" cy="0" r="30" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.4"/>
-      <circle cx="0" cy="0" r="15" fill="none" stroke="#00f2fe" stroke-width="0.5" opacity="0.6"/>
-      <line x1="-30" y1="0" x2="30" y2="0" stroke="#00f2fe" stroke-width="0.5" opacity="0.4"/>
-      <line x1="0" y1="-30" x2="0" y2="30" stroke="#00f2fe" stroke-width="0.5" opacity="0.4"/>
-      <!-- Radar Sweep -->
-      <path d="M 0 0 L 21 -21 A 30 30 0 0 1 30 0 Z" fill="#00f2fe" opacity="0.3">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-      </path>
+    <rect x="0" y="140" width="230" height="3" rx="1.5" fill="url(#cyanGrad)" filter="url(#glow)">
+      <animate attributeName="width" values="230;150;230" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- role chips -->
+    <g transform="translate(0 166)" font-family="'Courier New', monospace" font-size="11" font-weight="bold">
+      <rect width="176" height="28" rx="6" fill="#0b1120" stroke="#22d3ee"/>
+      <text x="13" y="19" fill="#38bdf8">FULL_STACK_DEV</text>
+      <rect x="186" width="158" height="28" rx="6" fill="#0b1120" stroke="#a78bfa"/>
+      <text x="199" y="19" fill="#c4b5fd">DISTRO_HOPPER</text>
+      <rect x="354" width="158" height="28" rx="6" fill="#0b1120" stroke="#f472b6"/>
+      <text x="367" y="19" fill="#f9a8d4">WORLD_BUILDER</text>
+    </g>
+
+    <!-- manifesto -->
+    <g transform="translate(0 220)">
+      <rect width="530" height="50" rx="8" fill="#0a0f1e" stroke="#1e293b"/>
+      <rect width="4" height="30" y="10" rx="2" fill="#22d3ee"/>
+      <text x="20" y="21" font-family="'Courier New', monospace" font-size="10.5" letter-spacing="1.4" fill="#64748b">PRIME_DIRECTIVE</text>
+      <text x="20" y="39" font-family="'Courier New', monospace" font-size="13" font-style="italic" fill="#e2e8f0">"Ngoding aja dulu, jagonya mah belakangan!"</text>
+    </g>
+
+    <!-- micro telemetry -->
+    <g transform="translate(0 292)" font-family="'Courier New', monospace" font-size="10.5" letter-spacing="1.2">
+      <text x="0" y="0" fill="#334155">LOCAL_TIME</text><text x="0" y="17" fill="#94a3b8">UTC+7</text>
+      <text x="120" y="0" fill="#334155">FUEL</text><text x="120" y="17" fill="#94a3b8">COFFEE</text>
+      <text x="240" y="0" fill="#334155">MODE</text><text x="240" y="17" fill="#34d399">SHIPPING</text>
+      <text x="360" y="0" fill="#334155">STATUS</text><text x="360" y="17" fill="#f472b6">ONLINE</text>
     </g>
   </g>
 
-  <!-- Bottom Scanline overlay for retro CRT/Cyberpunk feel -->
-  <rect width="1200" height="480" rx="20" fill="url(#scanlines)" pointer-events="none" opacity="0.6"/>
-
-  <!-- Footer Tech Ticker -->
-  <g transform="translate(60, 452)">
-    <text x="0" y="0" font-family="'Courier New', monospace" font-size="10" fill="#64748b" letter-spacing="1">SECURE_HASH: 0x7F8C2A9B // HOST: GITHUB_CONTAINER // READY_FOR_NEXT_CHALLENGE</text>
+  <!-- RIGHT: reactor rings -->
+  <g transform="translate(950 250)">
+    <circle r="118" fill="#7c3aed" opacity=".22" filter="url(#glowSoft)"/>
+    <circle r="104" fill="none" stroke="#1e293b" stroke-width="1"/>
+    <circle r="104" fill="none" stroke="url(#reactor)" stroke-width="2.5" stroke-dasharray="70 490" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="82" fill="none" stroke="#1e293b" stroke-width="1"/>
+    <circle r="82" fill="none" stroke="#22d3ee" stroke-width="2" stroke-dasharray="40 300" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0-60 52-30 52 30 0 60-52 30-52-30Z" fill="none" stroke="#a78bfa" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="stroke-opacity" values="1;.35;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0-38 33-19 33 19 0 38-33 19-33-19Z" fill="none" stroke="#22d3ee" stroke-width="1.2" opacity=".8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <text y="8" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#e2e8f0" letter-spacing="2">RABDAL</text>
+    <text y="-8" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#64748b" letter-spacing="3">CORE v4.2</text>
+    <g font-family="'Courier New', monospace" font-size="9" fill="#64748b" letter-spacing="1.5">
+      <text x="-150" y="-96" fill="#22d3ee">REACTOR</text>
+      <text x="-150" y="-82">LOAD 0.94</text>
+      <text x="88" y="112" fill="#f472b6">SYNC OK</text>
+    </g>
+    <circle cx="0" cy="-104" r="3.5" fill="#22d3ee"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="74" cy="72" r="3" fill="#f472b6"><animate attributeName="opacity" values="1;.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
   </g>
+
+  <!-- bottom terminal ticker -->
+  <g transform="translate(58 404)" font-family="'Courier New', monospace" font-size="12.5">
+    <rect x="-8" y="-20" width="692" height="72" rx="8" fill="url(#panelGrad)" stroke="#1e293b"/>
+    <text x="4" y="-2" fill="#22d3ee">$<tspan fill="#e2e8f0"> whoami --verbose</tspan></text>
+    <text x="4" y="18" fill="#64748b">[OK] stack:</text>
+    <text x="70" y="18" fill="#f472b6">DART · C++ · TS · PY · FLUTTER · LINUX</text>
+    <text x="4" y="38" fill="#34d399">[LIVE] commits streaming · builds green · curiosity maxed</text>
+    <rect x="4" y="46" width="9" height="13" fill="#22d3ee">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <text x="1140" y="474" text-anchor="end" font-family="'Courier New', monospace" font-size="9.5" letter-spacing="2" fill="#334155">END_OF_LINE // TheRabdal</text>
+
+  <rect width="1200" height="500" rx="22" fill="url(#scanP)" pointer-events="none" opacity=".55"/>
 </svg>
