@@ -43,10 +43,6 @@
 
 ### ◢ MODULE_CONFIG ◣
 
-<|start|> 01 / LANGUAGES | 02 / FRAMEWORKS & SYSTEMS | 03 / TOOLS & CREATIVE |
-|:--|:--|:--|
-| `DART` `C++` `JS` `JAVA` `PYTHON` `PHP` | `FLUTTER` `FIREBASE` `TENSORFLOW` `WORDPRESS` `TOMCAT` `MYSQL` `VERCEL` | `GIT` `GITHUB` `GITLAB` `CISCO` `POSTMAN` `CANVA` `ADOBE` `FIGMA` `STEAM` |
-
 <div align="center">
 
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
